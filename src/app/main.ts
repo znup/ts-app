@@ -2,6 +2,7 @@ import { faker } from '@faker-js/faker';
 
 import {
   addProduct,
+  findProduct,
   products,
   updateProduct,
 } from './products/product.service';
@@ -26,4 +27,11 @@ const product = products[0];
 updateProduct(product.id, {
   title: 'New title',
   stock: 100,
+});
+
+findProduct({
+  stock: 12,
+  color: 'red',
+  createdAt: new Date(),
+  isNew: true,
 });
