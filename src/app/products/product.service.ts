@@ -43,5 +43,9 @@ export const findProduct = (dto: findProductDTO): Product[] => {
   // code
   // dto.color = 'blue';
   // isNew = true;
+  // dto.tags = [];
+  // producto.dto / para no mutarse
+  // dto.tags?.pop();
+  // dto.tags?.push();
   return products;
 };
